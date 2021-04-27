@@ -6,9 +6,9 @@
   padding: 0;
 }
 :root {
-  --bg: #111111;
-  --prim-color: #666666;
-  --plate-color: #333333;
+  --bg: #000000;
+  --prim-color: #11b642;
+  --plate-color: #000000;
 }
 body {
   position: relative;
@@ -22,7 +22,13 @@ body {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(var(--bg) 80%, transparent 90%, var(--bg));
+  //background: linear-gradient(var(--bg) 80%, transparent 90%, var(--bg));
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--bg) 20%,
+    transparent 30%,
+    var(--bg) 50%
+  );
 }
 section {
   //height: 100vh;
